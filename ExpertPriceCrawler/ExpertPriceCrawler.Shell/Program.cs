@@ -1,6 +1,5 @@
 ﻿using ConsoleTables;
 using ExpertPriceCrawler;
-using System.Diagnostics;
 using System.Text;
 
 public static class Program
@@ -16,8 +15,7 @@ public static class Program
         var branchPrices = await crawler.CollectPrices(uri);
 
         int done = 0;
-        int printRowCount = 25;
-        
+        int printRowCount = 10;
         do
         {
             ConsoleTable.From<ResultBase>(

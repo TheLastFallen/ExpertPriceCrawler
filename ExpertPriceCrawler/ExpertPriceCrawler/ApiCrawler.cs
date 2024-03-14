@@ -196,7 +196,7 @@ namespace ExpertPriceCrawler
                     catch (Exception e)
                     {
 
-                        logger.Debug(e, $"Maxed out on request retries for URL{apiUrl}");
+                        logger.Debug(e, $"Ran into an error for URL{apiUrl}");
                         return (true, null, null);
 
                     }
